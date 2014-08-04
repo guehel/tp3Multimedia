@@ -1,57 +1,77 @@
 body{
-  background-image:url(lesbig5.jpg);  
+    background-image:url(lesbig5.jpg);  
     background-size: cover;
 }
 
 #corps{
-   position: fixed;
+    position: fixed;
     margin: auto;
     margin-top: 20%;
     width: 80%;
     height: 800px;
- 
+
 }
 h3{
     text-align:  center;
     opacity: 0;
-     visibility: hidden;
-     -webkit-transition:   2s linear;
-        transition:  2s linear;
+    visibility: hidden;
+    -webkit-transition:   2s linear;
+    transition:  2s linear;
 }
 .blocImage{
-      
-        background-size: 100% 100%;
-        overflow: hidden;
-        width: 20%;
-        height: auto;
-        -webkit-transition:   2s linear;
-        transition:  2s linear;
-        float: left;
-opacity: 0;
-  position: fixed;
-      
+
+    background-size: 100% 100%;
+    overflow: hidden;
+    width: 20%;
+    height: auto;
+    -webkit-transition:   2s linear;
+    transition:  2s linear;
+    float: left;
+    /*opacity: 0;*/
+    /*position: fixed;*/
+
 }
+
+.blocImage:hover .texte{
+    visibility: visible;
+    opacity: 1;
+    top: 0em ;
+}
+.blocImage:hover h3{
+
+    opacity: 1;
+    visibility: visible;
+
+}
+.blocImage:hover{
+    /*opacity: 1;*/
+    /*transform: scale(2) ;*/
+    -webkit-transform: scale(2) ;
+
+}
+
+
 div{
-      
-   
+
+
 }
 #bloc1{background-image:url(lion.jpeg);
        top: 550px;
        left: 20%;
 }
 #bloc2{background-image:url(Elephant.jpg);
-   top: 220px;
+       top: 220px;
        left: 40%;
 }
 #bloc3{background-image:url(rhino1.jpg);
-  top: 220px;
+       top: 220px;
        left: 65%;}
 #bloc4{background-image:url(buffle.jpg);
-  top: 220px;
+       top: 220px;
        left: 13%;
 }
 #bloc5{background-image:url(leopard.jpg);
- top: 550px;
+       top: 550px;
        left: 60%;}
 .texte {
     width: 100%;
@@ -60,28 +80,11 @@ div{
     position: relative;
     box-sizing: border-box;
     visibility: hidden;
-   opacity: 0;
+    opacity: 0;
     top:   8em;
     color: white;
     transition: 2s linear;
     -webkit-transition: 2s linear;
-}
-.blocImage:hover .texte{
-     visibility: visible;
-   opacity: 1;
-    top: 0em ;
-}
-.blocImage:hover h3{
-    
-       opacity: 1;
-       visibility: visible;
-    
-}
-.blocImage:hover{
-    opacity: 1;
-      transform: scale(2) ;
-      -webkit-transform: scale(2) ;
-    
 }
 
 @keyframes marquee {
